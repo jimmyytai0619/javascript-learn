@@ -71,8 +71,58 @@ let test1 = () => {
 };
 
 let test2 = () => {
-    num2 = 18;
+    let num2 = 18;
     return num2;
 };
 
-console.log("num2 :", num2);
+console.log("num2 :", test2());
+
+//var 整个function都可以看得到 挂户里都看的到
+//let 只在一个挂户里有效
+
+let test4 = () => {
+    let num4 = 123;
+ //       let message; // block scope
+ //       var message; // function scope
+
+    if(num4 > 0){
+        message = "ok";
+ //       let message = "ok"; //只在if 内有效
+    } else {
+        message = "no";
+ //       let message = "no"; //只在else 内有效
+    };
+
+    console.log(message);
+};
+
+test4();
+
+// for loop
+
+let arr1 = [67,69,42,34,89,77,98,89];
+let sum1 = 0;
+
+ for(let i = 0; i <= arr1.length -1 ; i++){
+
+    sum1 = sum1 + arr1[i];
+
+ }
+
+ console.log("arr1 total is :" + sum1);
+
+ //***
+
+for (let i = 6; i>0; i--){
+    console.log("*".repeat(i));
+}
+
+//name
+// 
+
+let teacherName = "Jack!";
+
+for(let i = 0; i<teacherName.length; i++){
+    console.log(teacherName[i].repeat(5-i));
+
+};
