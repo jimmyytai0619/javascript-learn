@@ -118,7 +118,8 @@ for (let i = 6; i>0; i--){
 }
 
 //name
-// 
+// 后面的i，5-i 是要repeat的个数
+// 前面的i是用i值来决定要repeat的字眼是哪一个字
 
 let teacherName = "Jack!";
 
@@ -126,3 +127,5 @@ for(let i = 0; i<teacherName.length; i++){
     console.log(teacherName[i].repeat(5-i));
 
 };
+
+//
