@@ -128,4 +128,9 @@ for(let i = 0; i<teacherName.length; i++){
 
 };
 
-//
+//三元运算子
+// 如果a大于0，帮我positive 不然的话冒号后面的negative
+// (条件判断) ? (True的回传值) : (False的回传值)
+let c = 123;
+let message2 = a > 0 ? "positive" : "negative";
+console.log(message2);
