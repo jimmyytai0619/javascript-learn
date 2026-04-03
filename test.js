@@ -23,7 +23,7 @@ let info = {
 
 console.log(info);
 
-info["interest"].push('bouldering');
+info["interest"].push("bouldering");
 console.log(info.interest);
 
 
@@ -98,6 +98,22 @@ let test4 = () => {
 
 test4();
 
+// if got function call it out, then output the console.log
+let test5 = () => {
+
+    test5num = 123;
+
+    if(test5num > 10){
+        test5message = "this is test 5 message more than 10";
+    } else {
+        test5message = "less than 10";
+    };
+
+    console.log(test5message);
+};
+
+test5();
+
 // for loop
 
 let arr1 = [67,69,42,34,89,77,98,89];
@@ -134,3 +150,4 @@ for(let i = 0; i<teacherName.length; i++){
 let c = 123;
 let message2 = a > 0 ? "positive" : "negative";
 console.log(message2);
+
